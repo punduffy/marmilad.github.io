@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuaFlow | A Minimalist Space for Reflection</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --accent-color: #00FFFF;
+            --text-color: #FFFFFF;
+            --text-muted: rgba(255, 255, 255, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 15vh;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 200;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            letter-spacing: 0.1rem;
+        }
+
+        section {
+            width: 100%;
+            margin-bottom: 80px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            max-width: 500px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            font-weight: 300;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .privacy-box {
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 1px; /* Sharp Apple minimalism */
+        }
+
+        footer {
+            margin-top: 100px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .container { padding: 80px 24px; }
+            .logo { font-size: 1.8rem; letter-spacing: 0.3rem; }
+            header { margin-bottom: 10vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">DuaFlow</h1>
+            <p class="tagline">A minimalist space for reflection.</p>
+        </header>
+
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <div class="privacy-box">
+                <p><strong>Zero-Data Commitment</strong></p>
+                <p>DuaFlow is built as a private sanctuary. We do not collect, store, or share your personal data.</p>
+                <p>There are no accounts, no email tracking, and no behavioral analytics. Your reflection data stays exactly where it belongs: on your device.</p>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>Need assistance or have feedback?</p>
+            <p><a href="mailto:contact.duaflow@gmail.com">contact.duaflow@gmail.com</a></p>
+        </section>
+
+        <footer>
+            &copy; 2026 Marmilad. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
