@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,8 +93,9 @@
 
         .privacy-box {
             padding: 40px;
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 1px; /* Sharp Apple minimalism */
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1px;
+            /* Sharp Apple minimalism */
         }
 
         footer {
@@ -104,23 +106,40 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Mobile Adjustments */
         @media (max-width: 600px) {
-            .container { padding: 80px 24px; }
-            .logo { font-size: 1.8rem; letter-spacing: 0.3rem; }
-            header { margin-bottom: 10vh; }
+            .container {
+                padding: 80px 24px;
+            }
+
+            .logo {
+                font-size: 1.8rem;
+                letter-spacing: 0.3rem;
+            }
+
+            header {
+                margin-bottom: 10vh;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <header>
-            <h1 class="logo">DuaFlow</h1>
+            <img src="logo.png" alt="DuaFlow Logo" style="height: 120px; width: auto; margin-bottom: 2rem;">
             <p class="tagline">A minimalist space for reflection.</p>
         </header>
 
@@ -129,14 +148,15 @@
             <div class="privacy-box">
                 <p><strong>Zero-Data Commitment</strong></p>
                 <p>DuaFlow is built as a private sanctuary. We do not collect, store, or share your personal data.</p>
-                <p>There are no accounts, no email tracking, and no behavioral analytics. Your reflection data stays exactly where it belongs: on your device.</p>
+                <p>There are no accounts, no email tracking, and no behavioral analytics. Your reflection data stays
+                    exactly where it belongs: on your device.</p>
             </div>
         </section>
 
         <section id="support">
             <h2>Support</h2>
             <p>Need assistance or have feedback?</p>
-            <p><a href="mailto:contact.duaflow@gmail.com">contact.duaflow@gmail.com</a></p>
+            <p><a href="mailto:contact@marmilad.com">contact@marmilad.com</a></p>
         </section>
 
         <footer>
@@ -145,4 +165,5 @@
     </div>
 
 </body>
+
 </html>
